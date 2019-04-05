@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>youtube-subscription-downloader</Name>
+  <Repository>gavincampbell/youtube-subscription-downloader</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview></Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/youtube-subscription-downloader/master/youtube-subscription-downloader.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="EXECUTION_CRON_EXPRESSION" Target="EXECUTION_CRON_EXPRESSION" Default="" Mode=""   Description="Container Variable: EXECUTION_CRON_EXPRESSION" Type="Variable" Display="always" Required="true" Mask="false">0 */1 * * *</Config>
+  <Config Name="HISTORY_FILE"              Target="HISTORY_FILE"              Default="" Mode=""   Description="Container Variable: HISTORY_FILE"              Type="Variable" Display="always" Required="true" Mask="false">/config/history.txt</Config>
+  <Config Name="COOKIE_FILE"               Target="COOKIE_FILE"               Default="" Mode=""   Description="Container Variable: COOKIE_FILE"               Type="Variable" Display="always" Required="true" Mask="false">/config/cookie.txt</Config>
+  <Config Name="PUID"                      Target="PUID"                      Default="" Mode=""   Description="Container Variable: PUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="GUID"                      Target="GUID"                      Default="" Mode=""   Description="Container Variable: GUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="LOGFILE"                   Target="LOGFILE"                   Default="" Mode=""   Description="Container Variable: LOGFILE"                   Type="Variable" Display="always" Required="true" Mask="false">/config/youtube-subscription-downloader.log</Config>
+  <Config Name="TZ"                        Target="TZ"                        Default="" Mode=""   Description="Container Variable: TZ"                        Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+  <Config Name="config"                    Target="/config"                   Default="" Mode="rw" Description="Container Path: /config"                       Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="videos"                    Target="/videos"                   Default="" Mode="rw" Description="Container Path: /videos"                       Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="temp"                      Target="/temp"                     Default="" Mode="rw" Description="Container Path: /temp"                         Type="Path"     Display="always" Required="true" Mask="false"></Config>
+</Container>

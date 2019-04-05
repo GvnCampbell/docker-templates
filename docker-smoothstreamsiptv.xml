@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>docker-smoothstreamsiptv</Name>
+  <Repository>gavincampbell/docker-smoothstreamsiptv</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview></Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-smoothstreamsiptv/master/docker-smoothstreamsiptv.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="SMOOTHSTREAMS_SITE" Target="SMOOTHSTREAMS_SITE" Default="" Mode=""   Description="Container Variable: SMOOTHSTREAMS_SITE" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="USERNAME"           Target="USERNAME"           Default="" Mode=""   Description="Container Variable: USERNAME"           Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PASSWORD"           Target="PASSWORD"           Default="" Mode=""   Description="Container Variable: PASSWORD"           Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="PORT"               Target="80"                 Default="" Mode=""   Description="Container Port: PORT"                   Type="Port"     Display="always" Required="true" Mask="false">6543</Config>
+  <Config Name="HOST_IP"            Target="HOST_IP"            Default="" Mode=""   Description="Container Variable: HOST_IP"            Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="HOST_PORT"          Target="HOST_PORT"          Default="" Mode=""   Description="Container Variable: HOST_PORT"          Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="TZ"                 Target="TZ"                 Default="" Mode=""   Description="Container Variable: TZ"                 Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+</Container>
