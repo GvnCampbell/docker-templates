@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="1">
-  <Name>lanpresence</Name>
+  <Name>lan_presence</Name>
   <Repository>gavincampbell/lan_presence</Repository>
   <Registry></Registry>
   <Network>host</Network>
