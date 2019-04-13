@@ -2,22 +2,22 @@
 <Container version="2">
   <Name>hubitat-backup</Name>
   <Repository>gavincampbell/hubitat-backup</Repository>
-  <Registry>https://hub.docker.com/r/gavincampbell/hubitat-backup//Dockerfile/</Registry>
+  <Registry></Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/gavincampbell/hubitat-backup/</Support>
+  <Support></Support>
   <Project/>
   <Overview></Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/GvnCampbell/hubitat-backup/master/hubitat-backup.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-templates/master/hubitat-backup.ico</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1553629231</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description></Description>
@@ -26,38 +26,17 @@
     <Publish/>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/backups</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/logs</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment>
-    <Variable>
-      <Value></Value>
-      <Name>HUBIP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0 */4 * * *</Value>
-      <Name>EXECUTION_CRON_EXPRESSION</Name>
-      <Mode/>
-    </Variable>
   </Environment>
   <Labels/>
-  <Config Name="HUBIP" Target="HUBIP" Default="" Mode="" Description="Container Variable: HUBIP" Type="Variable" Display="always" Required="false" Mask="true"></Config>
-  <Config Name="EXECUTION_CRON_EXPRESSION" Target="EXECUTION_CRON_EXPRESSION" Default="" Mode="" Description="Container Variable: EXECUTION_CRON_EXPRESSION" Type="Variable" Display="always" Required="true" Mask="false">0 */4 * * *</Config>
-  <Config Name="localtime" Target="/etc/localtime" Default="" Mode="ro" Description="Container Path: /etc/localtime" Type="Path" Display="always" Required="true" Mask="false">/etc/localtime</Config>
-  <Config Name="backups" Target="/backups" Default="" Mode="rw" Description="Container Path: /backups" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="logs" Target="/logs" Default="" Mode="rw" Description="Container Path: /logs" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PUID"                      Target="PUID"                      Default="" Mode=""   Description="Variable: PUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="GUID"                      Target="GUID"                      Default="" Mode=""   Description="Variable: GUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="TZ"                        Target="TZ"                        Default="" Mode=""   Description="Variable: TZ"                        Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+  <Config Name="EXECUTION_CRON_EXPRESSION" Target="EXECUTION_CRON_EXPRESSION" Default="" Mode=""   Description="Variable: EXECUTION_CRON_EXPRESSION" Type="Variable" Display="always" Required="true" Mask="false">0 */4 * * *</Config>
+  <Config Name="HUBIP"                     Target="HUBIP"                     Default="" Mode=""   Description="Variable: HUBIP"                     Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="DELETE_OLDER_THAN"         Target="DELETE_OLDER_THAN"         Default="" Mode=""   Description="Variable: DELETE_OLDER_THAN"         Type="Variable" Display="always" Required="true" Mask="false">7</Config>
+  <Config Name="NUMBER_OF_BACKUPS_TO_KEEP" Target="NUMBER_OF_BACKUPS_TO_KEEP" Default="" Mode=""   Description="Variable: NUMBER_OF_BACKUPS_TO_KEEP" Type="Variable" Display="always" Required="true" Mask="false">7</Config>
+  <Config Name="config"                    Target="/config"                   Default="" Mode="rw" Description="Path: /config"                       Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="backups"                   Target="/backups"                  Default="" Mode="rw" Description="Path: /backups"                      Type="Path"     Display="always" Required="true" Mask="false"></Config>
 </Container>
