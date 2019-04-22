@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>mixcloud_subs_dl</Name>
+  <Repository>gavincampbell/emby_cleaner</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview></Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-templates/master/emby_cleaner.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="PUID"                      Target="PUID"                      Default="" Mode=""   Description="Container Variable: PUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="GUID"                      Target="GUID"                      Default="" Mode=""   Description="Container Variable: GUID"                      Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="TZ"                        Target="TZ"                        Default="" Mode=""   Description="Container Variable: TZ"                        Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+  <Config Name="EXECUTION_CRON_EXPRESSION" Target="EXECUTION_CRON_EXPRESSION" Default="" Mode=""   Description="Container Variable: EXECUTION_CRON_EXPRESSION" Type="Variable" Display="always" Required="true" Mask="false">0 */6 * * *</Config>
+  <Config Name="SERVERNAME"                Target="SERVERNAME"                Default="" Mode=""   Description="Container Variable: SERVERNAME"                Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="SERVERPORT"                Target="SERVERPORT"                Default="" Mode=""   Description="Container Variable: SERVERPORT"                Type="Variable" Display="always" Required="true" Mask="false">8096</Config>
+  <Config Name="USERNAME"                  Target="USERNAME"                  Default="" Mode=""   Description="Container Variable: USERNAME"                  Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PASSWORD"                  Target="PASSWORD"                  Default="" Mode=""   Description="Container Variable: PASSWORD"                  Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="MOVESIMILAR"               Target="MOVESIMILAR"               Default="" Mode=""   Description="Container Variable: MOVESIMILAR"               Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="config"                    Target="/config"                   Default="" Mode="rw" Description="Container Path: /config"                       Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="recycle"                   Target="/recycle"                  Default="" Mode="rw" Description="Container Path: /recycle"                      Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="path1"                     Target=""                          Default="" Mode="rw" Description="Container Path: /path1"                        Type="Path"     Display="always" Required="false" Mask="false"></Config>
+  <Config Name="path2"                     Target=""                          Default="" Mode="rw" Description="Container Path: /path2"                        Type="Path"     Display="always" Required="false" Mask="false"></Config>
+  <Config Name="path3"                     Target=""                          Default="" Mode="rw" Description="Container Path: /path3"                        Type="Path"     Display="always" Required="false" Mask="false"></Config>
+  <Config Name="path4"                     Target=""                          Default="" Mode="rw" Description="Container Path: /path4"                        Type="Path"     Display="always" Required="false" Mask="false"></Config>
+</Container>
