@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="1">
-  <Name>mixcloud_subs_dl</Name>
+  <Name>emby_cleaner</Name>
   <Repository>gavincampbell/emby_cleaner</Repository>
   <Registry></Registry>
   <Network>bridge</Network>
