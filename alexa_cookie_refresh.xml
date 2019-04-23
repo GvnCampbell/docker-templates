@@ -30,5 +30,6 @@
   <Environment>
   </Environment>
   <Labels/>
-  <Config Name="PORT" Target="PORT" Default="" Mode="" Description="Container Port: PORT" Type="PORT" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="PORT"      Target="PORT"      Default="" Mode="" Description="Container Port: PORT"      Type="PORT" Display="always" Required="true" Mask="false">8008</Config>
+  <Config Name="PROXYPORT" Target="PROXYPORT" Default="" Mode="" Description="Container Port: PROXYPORT" Type="PORT" Display="always" Required="true" Mask="false">8009</Config>
 </Container>
