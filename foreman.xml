@@ -3,7 +3,7 @@
   <Name>foreman</Name>
   <Repository>gavincampbell/foreman</Repository>
   <Registry></Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
@@ -22,7 +22,7 @@
   <DonateLink/>
   <Description></Description>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish/>
   </Networking>
   <Data>
