@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-smoothstreamsiptv/master/docker-streamrecorder.ico</Icon>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-templates/master/docker-streamrecorder.ico</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
