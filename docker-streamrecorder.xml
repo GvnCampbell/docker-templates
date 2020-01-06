@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>docker-streamrecorder</Name>
+  <Repository>gavincampbell/docker-streamrecorder</Repository>
+  <Registry></Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview></Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-smoothstreamsiptv/master/docker-streamrecorder.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="config"     Target="/config"     Default="" Mode="rw" Description="Container Path: /config"      Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="recordings" Target="/recordings" Default="" Mode="rw" Description="Container Path: /recordings"  Type="Path"     Display="always" Required="true" Mask="false"></Config>
+  <Config Name="TZ"         Target="TZ"          Default="" Mode=""   Description="Container Variable: TZ"       Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+  <Config Name="PUID"       Target="PUID"        Default="" Mode=""   Description="Container Variable: PUID"     Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="GUID"       Target="GUID"        Default="" Mode=""   Description="Container Variable: GUID"     Type="Variable" Display="always" Required="true" Mask="false">1000</Config>
+</Container>
