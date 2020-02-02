@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="1">
   <Name>googlephotosuploader</Name>
-  <Repository>googlephotosuploader</Repository>
+  <Repository>gavincampbell/googlephotosuploader</Repository>
   <Registry></Registry>
   <Network>bridge</Network>
   <MyIP/>
