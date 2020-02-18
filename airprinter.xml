@@ -11,7 +11,7 @@
   <Project/>
   <Overview></Overview>
   <Category/>
-  <WebUI>http://192.168.1.2:631</WebUi>
+  <WebUI>http://192.168.1.2:631</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/GvnCampbell/docker-templates/master/airprinter.ico</Icon>
   <ExtraParams/>
