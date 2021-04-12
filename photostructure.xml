@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="1">
+  <Name>photostructure</Name>
+  <Repository>photostructure/server:alpha</Repository>
+  <Registry></Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project/>
+  <Overview></Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:1787]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://forum.photostructure.com/uploads/default/optimized/1X/5133b9065a06b3d11cc2fccc871694ea317b38f0_2_32x32.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+  </Data>
+  <Environment>
+  </Environment>
+  <Labels/>
+  <Config Name="Library"  Target="/ps/library/"	    Default=""  Mode="rw"   Description="Container Path: /ps/library/"     Type="Path"  Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Temp"     Target="/ps/tmp/"    	    Default=""  Mode="rw"   Description="Container Path: /ps/tmp/"         Type="Path"  Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Config"   Target="/ps/config/"      Default=""  Mode="rw"   Description="Container Path: /ps/config/"      Type="Path"  Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Logs"     Target="/ps/logs/"     	Default=""  Mode="rw"   Description="Container Path: /ps/logs/"        Type="Path"  Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Backup"   Target="/photos-backup/"  Default=""  Mode="rw"   Description="Container Path: /photos-backup/"  Type="Path"  Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Port"     Target="1787"             Default=""  Mode="tcp"  Description="Container Port: PORT"      	      Type="Port"  Display="always" Required="true" Mask="false">1787</Config>
+</Container>
